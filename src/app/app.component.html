@@ -4,12 +4,18 @@
         <h2 style="text-align: center">
             Autocomplete component
         </h2>
-        <div class="row">
-            <div class="col-md-4">
-                <span>Enter letter to start searching...</span>
-                <app-autocomplete [items]="availableTags" (itemClick)="onAutoComplete($event)"></app-autocomplete>
+        <div class="row mt-4">
+            <div class="card bg-light">
+                <p class="card-header">
+                   Component
+                </p>
+                <div class="card-body">
+                        <h4 class="card-title">Autocomplete</h4>
+                    <div class="card-text">Enter a letter to start searching (e.g. 'B')...</div>
+                    <app-autocomplete [items]="availableTags" (itemClick)="onAutoComplete($event)"></app-autocomplete>
+                </div>
             </div>
-          
+
         </div>
     </div>
 </div>
