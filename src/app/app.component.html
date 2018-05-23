@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <div>
+        <h2 style="text-align: center">
+            Autocomplete component
+        </h2>
+        <div class="row">
+            <div class="col-md-4">
+                <span>Enter letter to start searching...</span>
+                <app-autocomplete [items]="availableTags" (itemClick)="onAutoComplete($event)"></app-autocomplete>
+            </div>
+          
+        </div>
+    </div>
+</div>

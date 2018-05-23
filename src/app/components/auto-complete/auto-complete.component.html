@@ -1,0 +1,8 @@
+<div>
+  <input type="text" name="tag" (keyup)="findItems()" [(ngModel)]="inputText" class="form-control input-lg">
+</div>
+<div>
+  <ul class="list-group" [ngClass]="{'off': hideList}">
+    <li class="list-group-item" *ngFor="let item of itemList" (click)="onItemClick(item)">{{item}}</li>
+  </ul>
+</div>
